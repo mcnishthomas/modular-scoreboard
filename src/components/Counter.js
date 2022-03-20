@@ -12,9 +12,11 @@ class Counter extends Component {
     }
 
     decrementScore = () => {
-        this.setState(prevState => ({
-            score: prevState.score - 1
-        }));
+        if (this.state.score) {
+            this.setState(prevState => ({
+                score: prevState.score - 1
+            }));
+        }
     }
 
     render() {
