@@ -18,4 +18,8 @@ Header.PropTypes = {
     player: PropTypes.arrayOf(PropTypes.object)
 }
 
+Header.defaultProps = {
+    title: "Scoreboard"
+}
+
 export default Header;
