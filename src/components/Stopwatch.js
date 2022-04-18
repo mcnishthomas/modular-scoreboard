@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class Stopwatch extends Component {
+
+    static = {
+        seconds: PropTypes.number
+    }
 
     state = {
         isRunning: false,
